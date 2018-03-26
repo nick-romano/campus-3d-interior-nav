@@ -52,6 +52,7 @@ After:
 <img src="https://github.com/nick-romano/campus-3d-interior-nav/blob/master/imgs/basement_after.PNG" />
 
 <h4>Routes:</h4>
+<img src="https://github.com/nick-romano/campus-3d-interior-nav/blob/master/imgs/Route.PNG" />
 Managing vertical Datums in the 4.6 API is still pretty difficult. We want to keep our network data in feet- but the current scene view only seems to reconize z-elevations as meters. So our current workflow is to develop data in a feet, and publish the Network dataset in feet. The scene viewer will read the feet data and display it as meters somewhere deep in the ether of the scene viewer code- I have no control over that. When we send stops to the routing service, the z-data for each stop must be altered and converted to feet from meters. The same proccess occurs when we recieve the route as z-feet back from the server, we convert the route back to z-meter.
 
 
